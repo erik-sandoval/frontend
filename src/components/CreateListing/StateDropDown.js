@@ -5,11 +5,9 @@ const StateDropDown = props => (
     name="state"
     onChange={props.handleChange}
     onBlur={props.onBlur}
-    className="small-input form-control long-input"
+    className="small-input"
   >
-    <option selected hidden>
-      State:
-    </option>
+    <option />
     <option value="AL">AL</option>
     <option value="AK">AK</option>
     <option value="AR">AR</option>

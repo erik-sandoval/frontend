@@ -1,25 +1,25 @@
-import React from 'react';
+import React from "react";
 
 // this checks what the main category is in ./CreateListing.js and picks the appropiate
 //  subcategory.
 
 // conditionally renders based on main category
 const SubCategory = props => {
-  if (props.category === 'Mounts') {
+  if (props.category === "Mounts") {
     return (
       <div>
         SubCategory
         <select
-          name="subcategory"
+          name='subcategory'
           onChange={props.handleChange}
           className={`long-input ${
             props.errors.subcategory && props.touched.subcategory
-              ? 'input-error'
-              : ''
+              ? "input-error"
+              : ""
           } ${
             props.touched.subcategory && !props.errors.subcategory
-              ? 'input-correct'
-              : ''
+              ? "input-correct"
+              : ""
           }`}
         >
           <option defaultValue> </option>
@@ -36,21 +36,21 @@ const SubCategory = props => {
       </div>
     );
   }
-  if (props.category === 'Cameras') {
+  if (props.category === "Cameras") {
     return (
       <div>
         SubCategory
         <select
-          name="subcategory"
+          name='subcategory'
           onChange={props.handleChange}
           className={`long-input ${
             props.errors.subcategory && props.touched.subcategory
-              ? 'input-error'
-              : ''
+              ? "input-error"
+              : ""
           } ${
             props.touched.subcategory && !props.errors.subcategory
-              ? 'input-correct'
-              : ''
+              ? "input-correct"
+              : ""
           }`}
         >
           <option defaultValue>Pick Subcategory</option>
@@ -67,24 +67,24 @@ const SubCategory = props => {
       </div>
     );
   }
-  if (props.category === 'Lenses') {
+  if (props.category === "Lenses") {
     return (
       <div>
         SubCategory
         <select
-          name="subcategory"
+          name='subcategory'
           onChange={props.handleChange}
           className={`long-input ${
             props.errors.subcategory && props.touched.subcategory
-              ? 'input-error'
-              : ''
+              ? "input-error"
+              : ""
           } ${
             props.touched.subcategory && !props.errors.subcategory
-              ? 'input-correct'
-              : ''
+              ? "input-correct"
+              : ""
           }`}
         >
-          <option defaultValue="">Pick Subcategory</option>
+          <option defaultValue=''>Pick Subcategory</option>
           Ultrawide
           <option>Wide</option>
           <option>Normal</option>
@@ -103,12 +103,12 @@ const SubCategory = props => {
       </div>
     );
   }
-  if (props.category === 'Lighting') {
+  if (props.category === "Lighting") {
     return (
       <div>
         SubCategory
-        <select name="subcategory" onChange={props.handleChange}>
-          <option defaultValue="">Pick Subcategory</option>
+        <select name='subcategory' onChange={props.handleChange}>
+          <option defaultValue=''>Pick Subcategory</option>
           <option>Continuous</option>
           <option>Strobes</option>
           <option>Flashes & On-Camera</option>
@@ -120,12 +120,12 @@ const SubCategory = props => {
       </div>
     );
   }
-  if (props.category === 'Support Equipment') {
+  if (props.category === "Support Equipment") {
     return (
       <div>
         SubCategory
-        <select name="subcategory" onChange={props.handleChange}>
-          <option defaultValue="">Pick Subcategory</option>
+        <select name='subcategory' onChange={props.handleChange}>
+          <option defaultValue=''>Pick Subcategory</option>
           <option>Tripods</option>
           <option>Tripod Heads</option>
           <option>Monopods</option>
@@ -137,24 +137,24 @@ const SubCategory = props => {
       </div>
     );
   }
-  if (props.category === 'Accessories') {
+  if (props.category === "Accessories") {
     return (
       <div>
         SubCategory
         <select
-          name="subcategory"
+          name='subcategory'
           onChange={props.handleChange}
           className={`long-input ${
             props.errors.subcategory && props.touched.subcategory
-              ? 'input-error'
-              : ''
+              ? "input-error"
+              : ""
           } ${
             props.touched.subcategory && !props.errors.subcategory
-              ? 'input-correct'
-              : ''
+              ? "input-correct"
+              : ""
           }`}
         >
-          <option defaultValue="" />
+          <option defaultValue='' />
           <option> Bags & Covers</option>
           <option>Batteries & Power</option>
           <option>Battery Grips</option>
@@ -174,15 +174,15 @@ const SubCategory = props => {
       <select
         className={`long-input ${
           props.errors.subcategory && props.touched.subcategory
-            ? 'input-error'
-            : ''
+            ? "input-error"
+            : ""
         } ${
           props.touched.subcategory && !props.errors.subcategory
-            ? 'input-correct'
-            : ''
+            ? "input-correct"
+            : ""
         }`}
       >
-        <option value="" disabled>
+        <option value='' disabled>
           Choose Main Category First
         </option>
       </select>
