@@ -18,12 +18,12 @@ export default class Auth {
     domain: 'dev-gco3gwsp.auth0.com',
     clientID: 'kFpGm0tbpc2lUax1Il5S0vS54opwh3iv',
 
-    redirectUri: 'https://tech2rent.co/callback',
-     //redirectUri: 'http://localhost:3000/callback',
-     //redirectUri: 'https://sharp-wozniak-279070.netlify.com/callback',
+    redirectUri: 'https://priceless-tereshkova-2a5747.netlify.com/callback',
+    // redirectUri: 'http://localhost:3000/callback',
+    // redirectUri: 'https://sharp-wozniak-279070.netlify.com/callback',
 
     // redirectUri: 'https://tech2rent.co/callback',
-    //redirectUri: 'http://localhost:3000/callback',
+    // redirectUri: 'http://localhost:3000/callback',
     // redirectUri: 'https://sharp-wozniak-279070.netlify.com/callback',
 
     responseType: 'token id_token',
